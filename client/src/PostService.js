@@ -21,14 +21,12 @@ class PostService {
 
         });
     }
-
     //create posts
     static insertPost(text) {
         return axios.post(url, {
             text
         })
     }
-
     //delete posts
     static deletePost(id) {
         return axios.delete(`${url}/${id}`)

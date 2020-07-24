@@ -73,7 +73,9 @@
       v-on:dblclick="deletePost(post._id)"
     >
       <div class="card-content">
-        <p>{{post.text}}</p>
+        <p>{{post.text.name}}</p>
+        <p>{{post.text.text}}</p>
+        <p>{{post.text.phone}}</p>
       </div>
       <div class="card-tabs"></div>
       <div class="card-content grey lighten-4">
